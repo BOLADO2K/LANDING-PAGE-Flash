@@ -1,0 +1,107 @@
+body {
+    background-image: url("https://cdn.discordapp.com/attachments/1008571246654533692/1097957587405766837/ChipotleBandit_back_of_a_motorcycle_gang_jacket_where_the_gangs_ece143b6-e9e8-45e2-9292-17843fdcf309.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+}
+
+
+/* NAVBAR */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: rgba(0, 0, 0, 0.589);
+	padding: 5px;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo img {
+	height: 50px;
+	border-radius: 100%;
+}
+/* NAVBAR */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    margin-left: 25%;
+    object-fit: cover;
+    animation: fade-in 3s ease-in-out forwards;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fade-in 3s ease-in-out forwards;
+}
+
+h1 {
+    font-size: 70px;
+    animation: fade-in 3s ease-in-out forwards;
+}
+
+p {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    animation: fade-in 3s ease-in-out forwards;
+}
+
+span {
+    color: yellow;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+
+button:hover {
+    background-color: yellow;
+    box-shadow: 0px 15px 20px rgba(255, 255, 0, 0.438);
+    transform: translateY(-7px);
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
